@@ -56,7 +56,15 @@ header {
   align-items: center;
   white-space: nowrap;
 }
-.logo > img {
+.logo > span {
+  width: 34px;
+  height: 34px;
+  border: 2px solid #fff;
+  border-radius: 9px;
+  display: grid;
+  place-items: center;
+}
+.logo_img {
   width: 34px;
   height: 34px;
   border: 2px solid #fff;
@@ -823,7 +831,6 @@ footer {
   }
 }
 
-
 /* =========================
    DIRECT CONTACT SECTION
    ========================= */
@@ -883,7 +890,9 @@ footer {
 .contact-card strong {
   display: block;
 
-  font: 700 13px Manrope, sans-serif;
+  font:
+    700 13px Manrope,
+    sans-serif;
 
   margin-bottom: 3px;
 }
@@ -906,7 +915,6 @@ footer {
   transform: translate(3px, -3px);
 }
 
-
 /* Contact status */
 
 .contact-note {
@@ -925,7 +933,6 @@ footer {
   color: #27a34a;
   font-size: 12px;
 }
-
 
 /* Form */
 
@@ -949,7 +956,9 @@ footer {
 .form-heading h3 {
   margin: 0 0 5px;
 
-  font: 800 22px Manrope, sans-serif;
+  font:
+    800 22px Manrope,
+    sans-serif;
 }
 
 .form-heading p {
@@ -960,7 +969,6 @@ footer {
   font-size: 11px;
 }
 
-
 /* Make direct links keyboard accessible */
 
 .contact-card:focus-visible {
@@ -968,11 +976,9 @@ footer {
   outline-offset: 3px;
 }
 
-
 /* Mobile */
 
 @media (max-width: 700px) {
-
   .contact {
     padding: 65px 0;
   }
@@ -999,7 +1005,6 @@ footer {
   .form-heading h3 {
     font-size: 19px;
   }
-
 }
 
 /* =========================
@@ -1087,7 +1092,6 @@ footer {
 /* Mobile */
 
 @media (max-width: 700px) {
-
   .showreel {
     padding: 70px 0;
   }
@@ -1101,5 +1105,4 @@ footer {
     height: 60px;
     font-size: 20px;
   }
-
 }
