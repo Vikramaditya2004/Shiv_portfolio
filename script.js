@@ -73,3 +73,29 @@ if (form) {
 }
 
 document.querySelector("#year").textContent = new Date().getFullYear();
+
+
+const showreelVideo = document.getElementById("showreelVideo");
+const videoPlay = document.getElementById("videoPlay");
+const videoContainer = document.querySelector(".video-container");
+
+if (showreelVideo && videoPlay) {
+
+  videoPlay.addEventListener("click", () => {
+    showreelVideo.play();
+  });
+
+  showreelVideo.addEventListener("play", () => {
+    videoContainer.classList.add("playing");
+  });
+
+  showreelVideo.addEventListener("pause", () => {
+    videoContainer.classList.remove("playing");
+  });
+
+  showreelVideo.addEventListener("ended", () => {
+    videoContainer.classList.remove("playing");
+  });
+
+}
+
